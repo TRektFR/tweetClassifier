@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet simple classification</title>
+</head>
+<body>
+
+    <p>type in a sentence to figure out what type of content it is between :
+        <ul>
+            <li>hate speech</li>
+            <li>offensive language</li>
+            <li>neither</li>
+        </ul>
+    </p>
+
+    <form action="/" method="POST">
+        <input type="text" name="txt" value={{txt}}>
+        <input type="submit" value="send it">
+    </form> <br>
+    {% if type != -1 : %}
+        <p>this is considered: {{type}}</p>
+    {% endif %}
+</body>
+</html>
