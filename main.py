@@ -8,7 +8,7 @@ classes= {0: "hate_speech", 1: "offensive_language", 2: "neither"}
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/tweetclf", methods=["GET", "POST"])
 def home():
     tweet_type = -1
     text = ""
